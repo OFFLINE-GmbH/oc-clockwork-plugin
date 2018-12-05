@@ -17,7 +17,6 @@
     }
   ],
   "require": {
-    "php": ">=7.1",
     "itsgoingd/clockwork": "^3.1"
   }
 }

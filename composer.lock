@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb64143ade8c28cb06721776f70259b1",
+    "content-hash": "e813c92d18708c3d59e3d442987c4ead",
     "packages": [
         {
             "name": "itsgoingd/clockwork",
@@ -118,8 +118,6 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {
-        "php": ">=7.1"
-    },
+    "platform": [],
     "platform-dev": []
 }
