@@ -1,0 +1,23 @@
+{
+  "name": "offline/oc-clockwork-plugin",
+  "type": "october-plugin",
+  "description": "Clockwork debugging and profiling extension for October CMS",
+  "keywords": [
+    "october",
+    "cms",
+    "profiling",
+    "debugging",
+    "clockwork"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tobias Kündig",
+      "email": "tobias@offline.ch"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "itsgoingd/clockwork": "^3.1"
+  }
+}
