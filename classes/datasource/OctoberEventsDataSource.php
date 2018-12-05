@@ -16,6 +16,7 @@ class OctoberEventsDataSource extends LaravelEventsDataSource
             'pages\..*',
             'halcyon\..*',
             'mailer\..*',
+            'system\..*',
             'markdown\..*',
         ]);
     }
