@@ -129,7 +129,6 @@ return [
     */
 
     'filter_uris' => [
-        '/backend/.*' // October CMS Backend
     ],
 
     /*
