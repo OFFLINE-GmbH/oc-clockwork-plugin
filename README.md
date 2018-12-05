@@ -4,7 +4,7 @@ This plugin integrates the awesome [itsgoingd/clockwork](https://github.com/itsg
 CMS.
 
 Clockwork is a browser extension, providing tools for debugging and profiling your October CMS applications.
-Clockwork captures and visualizes the following data
+Clockwork captures and visualizes the following data:
 
 * HTTP requests 
 * Performance timeline of application execution cycle
