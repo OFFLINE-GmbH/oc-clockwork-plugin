@@ -17,7 +17,27 @@ Clockwork captures and visualizes the following data:
 
 ## Usage
 
-After the plugin installation is complete download the browser extension to get insights into your October CMS 
+After the plugin installation is complete add the `laravel.dont-discover` part to the `extra` section of your project's `composer.json` like this:
+
+```
+  "extra": {
+    "merge-plugin": {
+      "include": [
+        "plugins/*/*/composer.json"
+      ],
+      "recurse": true,
+      "replace": false,
+      "merge-dev": false
+    },
+    "laravel": {
+      "dont-discover": [
+        "itsgoingd/clockwork"
+      ]
+    }
+  }
+```
+
+Then download the browser extension to get insights into your October CMS 
 installation:
 
 - install the [Chrome extension](https://chrome.google.com/webstore/detail/clockwork/dmggabnehkmmfmdffgajcflpdjlnoemp)
