@@ -18,5 +18,12 @@
   ],
   "require": {
     "itsgoingd/clockwork": "^3.1"
+  },
+  "extra": { 
+    "laravel": {
+      "dont-discover": [
+        "itsgoingd/clockwork"
+      ]
+    }
   }
 }
