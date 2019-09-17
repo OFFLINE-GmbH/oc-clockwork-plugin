@@ -56,3 +56,9 @@ The plugin provides [file based configuration](./config/config.php) options wher
 all the Clockwork settings. Refer to
 [the October documentation](https://octobercms.com/docs/plugin/settings#file-configuration)
 on how to overwrite these settings.
+
+## Twig helper functions
+
+There are a few twig helper functions available you can use to interact with Clockwork from your views:
+
+See https://github.com/OFFLINE-GmbH/oc-clockwork-plugin/blob/master/Plugin.php#L43 for more details.
