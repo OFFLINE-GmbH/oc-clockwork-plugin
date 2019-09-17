@@ -36,4 +36,43 @@ class Plugin extends PluginBase
 
         AliasLoader::getInstance()->alias('Clockwork', \Clockwork\Support\Laravel\Facade::class);
     }
+
+    public function registerMarkupTags()
+    {
+        return [
+            'functions' => [
+                'clock' => function ( $item ) {
+                    return \Clockwork\Support\Laravel\Facade::info( $item );
+                },
+                'emergency' => function ( $item ) {
+                    return \Clockwork\Support\Laravel\Facade::emergency( $item );
+                },
+                'alert' => function ( $item ) {
+                    return \Clockwork\Support\Laravel\Facade::alert( $item );
+                },
+                'critical' => function ( $item ) {
+                    return \Clockwork\Support\Laravel\Facade::critical( $item );
+                },
+                'error' => function ( $item ) {
+                    return \Clockwork\Support\Laravel\Facade::error( $item );
+                },
+                'warning' => function ( $item ) {
+                    return \Clockwork\Support\Laravel\Facade::warning( $item );
+                },
+                'notice' => function ( $item ) {
+                    return \Clockwork\Support\Laravel\Facade::notice( $item );
+                },
+                'info' => function ( $item ) {
+                    return \Clockwork\Support\Laravel\Facade::info( $item );
+                },
+                'startEvent' => function ( $name, $description = null ) {
+                    return \Clockwork\Support\Laravel\Facade::startEvent( $name, $description );
+                },
+                'endEvent' => function ( $name ) {
+                    return \Clockwork\Support\Laravel\Facade::endEvent( $name );
+                }
+            ]
+        ];
+    }
+    
 }
